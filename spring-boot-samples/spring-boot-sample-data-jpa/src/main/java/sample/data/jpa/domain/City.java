@@ -30,7 +30,7 @@ public class City implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="city_generator", sequenceName="city_sequence", initialValue = 23)
+	@SequenceGenerator(name = "city_generator", sequenceName = "city_sequence", initialValue = 23)
 	@GeneratedValue(generator = "city_generator")
 	private Long id;
 
@@ -50,7 +50,6 @@ public class City implements Serializable {
 	}
 
 	public City(String name, String country) {
-		super();
 		this.name = name;
 		this.country = country;
 	}
